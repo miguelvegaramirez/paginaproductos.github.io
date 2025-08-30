@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+
 <body>
-    
+    <!--Encabezado de la página-->
+    <header>
+        <nav>
+            <div class="paginas">
+                <a class="tituloPagina" href="../index.html">Tienda productos</a>
+                <ul class="listaPaginas">
+                    <li><a class="paginaEnlace" href="../paginas/productos.html" target="_blank">Productos</a></li>
+                    <li><a class="paginaEnlace" href="../paginas/contacto.html" target="_blank">Contactenos</a></li>
+                    <li><a class="paginaEnlace" href="carrito.html" target="_self">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Contenedor princpal de carrito-->
+
+    <main class="contenedorPrincipal">
+        <!--Formulario de contacto-->
+        <h2>Tu carrito de compras</h2>
+        <div class="contenedorTabla">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th class="textoFinal">Precio</th>
+                        <th class="textoFinal">Cantidad</th>
+                        <th class="textoFinal">Sub Total</th>
+                        <th aria-label="acciones"></th>
+                    </tr>
+                <tbody id="carritoItems">
+                    <!--Codigo js-->
+
+                </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="total textoFinal">
+            <strong>Total: $<span id="totalPrecioCarrito">100000</span></strong>
+        </div>
+        <div class="acciones textoFinal">
+            <button class="btn btnFinalizar" id="finalizarPedido">Finalizar Compra</button>
+        </div>
+            <p class="msjVacio" id="msjCarritoVacio">Carrito vacio</p>
+    </main>
+    <footer class="footer">
+        <p>&copy;2025 Tienda - Todos los derechos reservados</p>
+    </footer>
 </body>
+
 </html>

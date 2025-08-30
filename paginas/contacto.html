@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
+
 <body>
-    
+    <!--Encabezado de la página-->
+    <header>
+        <nav>
+            <div class="paginas">
+                <a class="tituloPagina" href="../index.html">Tienda productos</a>
+                <ul class="listaPaginas">
+                    <li><a class="paginaEnlace" href="../paginas/productos.html" target="_self">Productos</a></li>
+                    <li><a class="paginaEnlace" href="contacto.html" target="_self">Contactenos</a></li>
+                    <li><a class="paginaEnlace" href="../paginas/carrito.html" target="_blank">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Contenedor princpal de los productos-->
+
+    <main class="contenedorPrincipal">
+        <!--Formulario de contacto-->
+        <div class="contenedorfrm">
+            <h2>Contáctanos</h2>
+            <p>Si tienes una consulta llena el formulario</p>
+            <br>
+            <hr>
+            <br>
+            <form class="frm" action="" method="post" id="formularioContacto">
+                <div class="espacioFrm">
+                    <label class="frmEtiqueta" for="email">Nombre: </label>
+                    <input class="frmDato" type="text" id="name" name="name" required>
+                    <br><br>
+                    <label class="frmEtiqueta" for="email">Correo electronico: </label>
+                    <input class="frmDato" type="email" id="email" name="email" required>
+                    <br><br>
+                    <label class="frmEtiqueta" for="message">Mensaje: </label>
+                    <textarea class="frmDato" rows="5" id="message" name="message" required></textarea>
+                </div>
+                <button class="btnSubmit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy;2025 Tienda - Todos los derechos reservados</p>
+    </footer>
 </body>
+
 </html>

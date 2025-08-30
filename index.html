@@ -13,8 +13,9 @@
     <!--Encabezado de la página-->
     <header>
         <nav>
-            <a class="tituloPagina" href="index.html">Tienda productos</a>
+
             <div class="paginas">
+                <a class="tituloPagina" href="index.html">Tienda productos</a>
                 <ul class="listaPaginas">
                     <li><a class="paginaEnlace" href="./paginas/productos.html" target="_blank">Productos</a></li>
                     <li><a class="paginaEnlace" href="./paginas/contacto.html" target="_blank">Contactenos</a></li>
@@ -24,12 +25,55 @@
         </nav>
     </header>
     <main class="contenedorPrincipal">
-        <section>
-            <h1>Tienda de productos</h1>
-            <p>Productso de alta calidad a los mejores precios</p>
-            <a href="./paginas/productos.html" target="_blank">Ver productos</a>
+        <section class="hero">
+            <div class="heroInner">
+                <h1>Tienda de productos</h1>
+                <p>Productso de alta calidad a los mejores precios</p>
+                <a class="btn btnPrincipal btnLg" href="./paginas/productos.html" target="_blank">Ver productos</a>
+            </div>
+        </section>
+        <!--Productos destacados-->
+        <section class="contenedorProductosDestacados">
+            <h2>Productos destacados</h2>
+            <div class="contenedorProductos">
+                <article class="tarjeta">
+                    <img class="imgTarjeta" src="assets/producto.png" alt="">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="tituloTarjeta">Producto 1</h4>
+                        <p class="precioTarjeta">$50000</p>
+                        <a href="" class="btn btnPrincipal">Ver detalle</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <img class="imgTarjeta" src="assets/producto.png" alt="">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="tituloTarjeta">Producto 2</h4>
+                        <p class="precioTarjeta">$50000</p>
+                        <a href="" class="btn btnPrincipal">Ver detalle</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <img class="imgTarjeta" src="assets/producto.png" alt="">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="tituloTarjeta">Producto 3</h4>
+                        <p class="precioTarjeta">$50000</p>
+                        <a href="" class="btn btnPrincipal">Ver detalle</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <img class="imgTarjeta" src="assets/producto.png" alt="">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="tituloTarjeta">Producto 4</h4>
+                        <p class="precioTarjeta">$50000</p>
+                        <a href="" class="btn btnPrincipal">Ver detalle</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <p>&copy;2025 Tienda - Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>
